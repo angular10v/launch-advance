@@ -1,0 +1,28 @@
+.column-header{
+    border-radius: 5px;
+        padding: 12px  13px 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        transition: all .2s linear .1s;
+        cursor: pointer;
+}
+
+.column-header .column-name {
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+
+    color: #000;
+    cursor: text;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-bottom: 25px;
+}
+
+.column-name-wrapper{
+    width: 100%;
+}

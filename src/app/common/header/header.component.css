@@ -1,0 +1,33 @@
+.company-info{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: gray;
+}
+
+.main-header{
+    padding: 0 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 5px 15px 0 rgb(40 106 221 / 40%);
+
+        position: sticky;
+        top: 0;
+        z-index: 11;
+        background-color: #fff;
+    
+}
+
+.navs ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #8E4CF9;
+}
+
+.navbar-nav{
+    list-style: none;
+}

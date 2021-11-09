@@ -1,0 +1,14 @@
+
+
+.column-item{
+        border-radius: 12px;
+        box-shadow: 0 3px 17px 0 rgb(0 0 0 / 8%);
+        background-color: #fff;
+        padding: 15px;
+        margin-bottom: 10px;
+}
+
+.progress{
+    margin: 10px 0 0 0 ;
+    height: 8px;
+}
