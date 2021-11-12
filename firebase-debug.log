@@ -1,0 +1,73 @@
+[debug] [2021-11-12T14:20:59.042Z] ----------------------------------------------------------------------
+[debug] [2021-11-12T14:20:59.045Z] Command:       /home/hp/.nvm/versions/node/v10.14.1/bin/node /home/hp/.nvm/versions/node/v10.14.1/bin/firebase init
+[debug] [2021-11-12T14:20:59.045Z] CLI Version:   9.18.0
+[debug] [2021-11-12T14:20:59.045Z] Platform:      linux
+[debug] [2021-11-12T14:20:59.045Z] Node Version:  v10.14.1
+[debug] [2021-11-12T14:20:59.045Z] Time:          Fri Nov 12 2021 19:50:59 GMT+0530 (India Standard Time)
+[debug] [2021-11-12T14:20:59.045Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-12T14:20:59.052Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-12T14:20:59.052Z] > authorizing via signed-in user (karishmapatidar21@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/hp/Documents/launch-advance
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-11-12T14:21:17.989Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-12T14:21:17.990Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-12T14:21:18.299Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Fri, 12 Nov 2021 14:21:18 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-12T14:21:18.306Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"launchadv","name":"advapplaunch"}
+[debug] [2021-11-12T14:21:20.230Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 12 Nov 2021 14:21:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1744","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-12T14:21:20.235Z] > refreshing access token with scopes: []
+[debug] [2021-11-12T14:21:20.235Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-12T14:21:20.472Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Fri, 12 Nov 2021 14:21:20 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-12T14:21:20.478Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8792941207318438196 [none]
+[debug] [2021-11-12T14:21:22.229Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8792941207318438196 200
+[debug] [2021-11-12T14:21:22.229Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8792941207318438196 {"name":"operations/cp.8792941207318438196"}
+[debug] [2021-11-12T14:21:22.729Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-11-12T14:21:22.730Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8792941207318438196 [none]
+[debug] [2021-11-12T14:21:24.513Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8792941207318438196 200
+[debug] [2021-11-12T14:21:24.513Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8792941207318438196 {"name":"operations/cp.8792941207318438196","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"588390946413","projectId":"launchadv","lifecycleState":"ACTIVE","name":"advapplaunch","createTime":"2021-11-12T14:21:19.805Z"}}
+[debug] [2021-11-12T14:21:24.516Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-12T14:21:24.516Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-12T14:21:24.728Z] <<< HTTP RESPONSE 200 {"date":"Fri, 12 Nov 2021 14:21:24 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-12T14:21:24.732Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/launchadv:addFirebase  
+ 
+[debug] [2021-11-12T14:21:25.904Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 12 Nov 2021 14:21:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-12T14:21:25.904Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-11-12T14:21:25.907Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-11-12T14:21:26.147Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/home/hp/.nvm/versions/node/v10.14.1/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/home/hp/.nvm/versions/node/v10.14.1/lib/node_modules/firebase-tools/lib/api.js:41:35)
+    at Request.self.callback (/home/hp/.nvm/versions/node/v10.14.1/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at Request.<anonymous> (/home/hp/.nvm/versions/node/v10.14.1/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at IncomingMessage.<anonymous> (/home/hp/.nvm/versions/node/v10.14.1/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:273:13)
+    at IncomingMessage.emit (events.js:187:15)
+    at IncomingMessage.EventEmitter.emit (domain.js:442:20)
+    at endReadableNT (_stream_readable.js:1094:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
